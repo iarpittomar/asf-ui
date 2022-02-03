@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Button, Heading, Text } from '@asf-ui/common';
+import { Button, Heading, Text, Text2 } from '@asf-ui/common';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Button></Button>
       <Text></Text>
       <Heading></Heading>
+      <Text2></Text2>
     </div>
   );
 }
