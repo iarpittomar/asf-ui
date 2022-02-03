@@ -1,6 +1,6 @@
 {
   "name": "@asf-ui/root",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@types/lodash": "^4.14.178",
     "@types/styled-components": "^5.1.21",
