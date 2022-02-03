@@ -1,9 +1,9 @@
 {
   "name": "@asf-ui/demo",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1-alpha.0",
   "private": true,
   "dependencies": {
-    "@asf-ui/common": "^0.1.0-alpha.0",
+    "@asf-ui/common": "^0.1.1-alpha.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
