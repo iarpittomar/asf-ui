@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Button, Text } from '@asf-ui/common';
+import { Button, Heading, Text } from '@asf-ui/common';
 
 function App() {
   return (
     <div className="App">
       <Button></Button>
       <Text></Text>
+      <Heading></Heading>
     </div>
   );
 }
