@@ -1,0 +1,11 @@
+{
+  "name": "@asf-ui/root",
+  "private": true,
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "@types/styled-components": "^5.1.21",
+    "lerna": "^4.0.0",
+    "lodash": "^4.17.21",
+    "styled-components": "^5.3.3"
+  }
+}
