@@ -1,0 +1,204 @@
+$box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.06);
+
+$borderRadius: 5px;
+$btnTextColor: white;
+
+$grey: #dedfe0;
+$greyHover: #b9bbbc;
+$braun: #5a5a5d;
+$brauHover: #373737;
+$blue: #3482da;
+$blueHover: rgb(5, 96, 201);
+$green: #3ab052;
+$greenHover: rgb(29, 141, 53);
+$yellow: rgb(209, 157, 2);
+$yellowHover: #ffc107;
+$orange: #e17b1c;
+$orangeHover: #d46702;
+$red: #c9433b;
+$redHover: #992c25;
+
+%button {
+  border-radius: $borderRadius;
+  padding: 0 12px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: $btnTextColor;
+  background-color: $grey;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    box-shadow: $box-shadow;
+    text-decoration: none;
+
+    &::before {
+      color: white;
+    }
+  }
+
+  &.contained {
+    color: white;
+    background-color: $blue;
+
+    &.primary {
+      background-color: $green;
+    }
+
+    &.secondary {
+      background-color: $orange;
+    }
+
+    &.delete {
+      background-color: $red;
+    }
+
+    &.cancel {
+      background-color: $yellow;
+    }
+  }
+
+  &[disabled] {
+    color: white;
+    opacity: 0.55;
+    cursor: inherit;
+
+    &:hover {
+      opacity: 0.55;
+      box-shadow: none;
+    }
+  }
+
+  &.flat {
+    background-color: transparent;
+    color: $blue;
+
+    &:hover {
+      background-color: transparent;
+    }
+    &.active {
+      text-decoration: none;
+      color: white;
+      background-color: $blue;
+    }
+  }
+
+  // &[disabled],
+  &:hover {
+    background-color: $blueHover;
+
+    &.primary {
+      background-color: $greenHover;
+    }
+
+    &.secondary {
+      background-color: $orangeHover;
+    }
+
+    &.delete {
+      background-color: $redHover;
+    }
+
+    &.cancel {
+      background-color: $yellowHover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.icon {
+    &::before {
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+
+  &.big {
+    &.icon {
+      &::before {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &.small {
+    &.icon {
+      &::before {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.button {
+  @extend %button;
+
+  &.icon {
+    &::before {
+      margin-right: 3px;
+    }
+  }
+
+  &.big {
+    height: 40px;
+    border-radius: $borderRadius;
+  }
+
+  &.small {
+    height: 24px;
+    padding: 0 6px;
+    border-radius: $borderRadius;
+    font-size: 12px;
+
+    &.icon {
+      &::before {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.icon-button {
+  @extend %button;
+
+  padding: 0;
+  width: 30px;
+  border-radius: 50%;
+
+  &.flat {
+    background: none;
+    &:hover {
+      text-decoration: none;
+      box-shadow: none;
+      background: none;
+
+      &::before {
+        color: $blueHover;
+      }
+    }
+  }
+
+  &.small {
+    width: 24px;
+  }
+
+  &.big {
+    width: 40px;
+  }
+
+  &.small {
+    width: 24px;
+  }
+
+  &.big {
+    width: 40px;
+  }
+
+  &::before {
+    margin: 0;
+  }
+}
